@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, select {
+  outline: none;
+}
