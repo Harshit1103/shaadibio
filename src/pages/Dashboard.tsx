@@ -44,7 +44,7 @@ export default function Dashboard() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/biodata/save",
+        "https://shaadibio.onrender.com/api/biodata/save",
         data
       )
 

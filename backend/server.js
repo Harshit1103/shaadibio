@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import cors from "cors"
 import dotenv from "dotenv"
+import cors from "cors";
 
 import authRoutes from "./routes/authRoutes.js"
 import biodataRoutes from "./routes/biodataRoutes.js"
@@ -15,6 +16,9 @@ app.use(express.json())
 
 app.use("/api/auth", authRoutes)
 app.use("/api/biodata", biodataRoutes)
+
+
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
